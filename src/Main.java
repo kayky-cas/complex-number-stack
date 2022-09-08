@@ -9,7 +9,7 @@ public class Main {
         try {
             File file = new File(args[0]);
             scanner = new Scanner(file);
-        }  catch (FileNotFoundException | ArrayIndexOutOfBoundsException e) {
+        }  catch (FileNotFoundException | ArrayIndexOutOfBoundsException ignore) {
             scanner = new Scanner(System.in);
             isUser = true;
         }
@@ -60,6 +60,6 @@ public class Main {
             }
         }
 
-        System.out.printf("Current Size: %d\nMax size: %d", lastSize, maxSize);
+        System.out.printf("Last value %s\nCurrent Size: %d\nMax size: %d", stack.pop() == null ? "The stack is empty" : stack.pop(), lastSize, maxSize);
     }
 }
