@@ -21,7 +21,7 @@ First compile:
 javac Main.java
 ```
 
-After, run with no args, for a user control:
+After, run with no args, for a full user control:
 ```
 java Main
 ```
