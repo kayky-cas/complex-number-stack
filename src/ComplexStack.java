@@ -30,9 +30,8 @@ public class ComplexStack extends Stack<ComplexNumber> {
     }
 
     public int size() {
-        if (isEmpty()) {
+        if (isEmpty())
             return 0;
-        }
 
         return size(1);
     }
@@ -40,9 +39,8 @@ public class ComplexStack extends Stack<ComplexNumber> {
     private int size(int cont) {
         ComplexNumber number = pop();
 
-        if (!isEmpty()) {
+        if (!isEmpty())
             cont = size(++cont);
-        }
 
         push(number);
 
