@@ -1,4 +1,6 @@
 public class Stack<T> {
+    private record Node<T>(T data, Node<T> previous) {}
+
     private Node<T> top;
 
     public Stack() {
@@ -24,6 +26,3 @@ public class Stack<T> {
         return data;
     }
 }
-
-
-record Node<T>(T data, Node<T> previous) {}
