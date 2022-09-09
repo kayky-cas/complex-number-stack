@@ -1,5 +1,5 @@
 public class Stack<T> {
-    private record Node<T>(T data, Node<T> previous) {}
+    private record Node<E>(E data, Node<E> previous) {}
 
     private Node<T> top;
 
